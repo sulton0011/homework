@@ -9,9 +9,11 @@ func main() {
 func PasswordVerification(s string) string{
 	var PassVer bool
 
-	if PassVer {
-		return "a"
+	
+	
+	if ! PassVer {		
+		return "Ok"
+	}else {
+		return "Wrong password"
 	}
-
-	return ""
 }
