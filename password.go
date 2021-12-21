@@ -5,19 +5,11 @@ import (
 	"unicode/utf8"
 )
 func main() {
-	fmt.Println(PasswordVerification("asdfampлs"))
+	fmt.Println(PasswordVerification("asdfamps"))
 }
 
 func PasswordVerification(s string) string{
-	var PassVer bool
-
-	for i := range s {
-		if s[i] <= 90 && s[i] >= 65 || s[i] >= 97 && s[i] <= 122 {
-			fmt.Println("a")
-		}
-	}
-	fmt.Println(len(s), utf8.RuneCountInString(s))
-	if ! PassVer {		
+	if len(s) == utf8.RuneCountInString(s) && utf8.RuneCountInString(s) >= 5{
 		return "Ok"
 	}else {
 		return "Wrong password"
