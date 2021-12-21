@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 func main () {
-	fmt.Println(("assbgbd"))
+	fmt.Println(CheckTheCharacters("assbgbd"))
 }
 
 func CheckTheCharacters(s string) (n string){
@@ -15,5 +15,5 @@ func CheckTheCharacters(s string) (n string){
 		}
 	}
 
-	return 
+	return n
 }
